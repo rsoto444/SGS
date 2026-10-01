@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./directory.css";
 import { site } from "@/lib/site.config";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -18,10 +19,11 @@ const fontCss = readFileSync(join(process.cwd(), "app", "fonts.css"), "utf8");
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | ${site.city}`,
+    default: `${site.name} | Local Business Directory for ${site.city}, ${site.state}`,
     template: `%s | ${site.name}`,
   },
-  description: site.tagline,
+  description: site.description,
+  openGraph: { siteName: site.name, type: "website", locale: "en_US" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

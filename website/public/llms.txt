@@ -1,25 +1,16 @@
-# Replace every line below with the real business.
-# This file tells ChatGPT, Claude and Perplexity what you do, in plain text.
+# Shop Local Provo
 
-# Your Business Name
+> A free local business directory for Provo, Utah. Browse businesses by category, see how to contact them, and get matched with a local pro. Operated by Provo SEO Pros.
 
-> One plain sentence on what you do and who you do it for.
+## What is on the site
+- Categories: https://shoplocalprovo.com/categories
+- Business listings with phone, website, address and hours
+- Get matched with a local pro: https://shoplocalprovo.com/get-matched
+- Add a business (free): https://shoplocalprovo.com/add-business
+- Premium listings and advertising: https://shoplocalprovo.com/advertise
 
-## Services
-- Service one: one line on what it is and who it's for
-- Service two: one line
-- Service three: one line
+## Area covered
+Provo, Utah and nearby Utah Valley.
 
-## Areas served
-Your city and the surrounding areas you actually travel to.
-
-## Facts
-- Years in business:
-- Licence number:
-- Reviews: X.X stars from N reviews
-- Response time:
-
-## Contact
-Phone:
-Email:
-Quote: https://example.com/quote
+## Notes
+Listing details are supplied by business owners. Confirm details with the business directly.

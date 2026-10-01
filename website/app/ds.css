@@ -31,7 +31,7 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
 /* ---- colors.css ---- */
 :root{
 /* Base — blue (the brand: nav, hero, buttons, links, stats) */
---blue-900:#062f66;--blue-800:#0a4794;--blue-700:#0b62c9;--blue-600:#0a7cff;--blue-500:#3d97ff;--blue-400:#6fb2ff;--blue-300:#9ccbff;--blue-200:#c6e1ff;--blue-100:#e2effe;--blue-50:#f2f8ff;
+--blue-900:#053a3d;--blue-800:#075359;--blue-700:#0a6b73;--blue-600:#0e8a94;--blue-500:#2fa6ae;--blue-400:#62c0c6;--blue-300:#96d6da;--blue-200:#c3e9eb;--blue-100:#e1f4f5;--blue-50:#f1fafa;
 /* Base — accent (the one accent: promo strip, the money action, active states).
    Graphite by design: high contrast on white AND on any brand hue, so a business
    can re-skin --blue-* without ever restyling the accent. Swap these nine values
@@ -54,7 +54,7 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
 --positive-600:#0a7a52;--positive-500:#0d9668;--positive-50:#e6f6f0;
 --caution-600:#a35a06;--caution-500:#c26f09;--caution-50:#fdf3e6;
 --critical-600:#b52d24;--critical-500:#d93a2f;--critical-50:#fdedec;
---info-600:#0b62c9;--info-500:#0a7cff;--info-50:#e8f2ff;
+--info-600:#0a6b73;--info-500:#0e8a94;--info-50:#e1f4f5;
 
 /* Semantic — text */
 --text-strong:var(--ink-900);--text-body:var(--ink-700);--text-muted:var(--ink-500);--text-faint:var(--ink-400);--text-inverse:var(--white);--text-brand:var(--blue-700);--text-accent:var(--accent-600);--text-link:var(--blue-700);--text-link-hover:var(--blue-600);
@@ -120,7 +120,7 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
 --shadow-sm:0 1px 3px rgba(16,24,40,.07),0 1px 2px rgba(16,24,40,.04);
 --shadow-md:0 2px 10px rgba(16,24,40,.08),0 1px 3px rgba(16,24,40,.05);
 --shadow-lg:0 12px 32px rgba(16,24,40,.12),0 3px 8px rgba(16,24,40,.06);
---shadow-brand:0 6px 18px rgba(27,93,209,.18);
+--shadow-brand:0 6px 18px rgba(10,107,115,.18);
 --shadow-inset-press:inset 0 2px 0 rgba(16,24,40,.10);
 --ring-focus:0 0 0 var(--border-focus) var(--blue-600),0 0 0 4px var(--blue-200);
 --scrim-media:linear-gradient(to top,rgba(26,26,25,.76) 0%,rgba(26,26,25,.28) 45%,rgba(26,26,25,0) 100%);/* @kind other */

@@ -10,6 +10,10 @@ export async function POST(request: Request) {
   const form = await request.formData();
   const payload = Object.fromEntries(form.entries());
 
+  // Honeypot: real people never fill this hidden field. Pretend success to bots.
+  if (payload.company_website) return NextResponse.redirect(new URL("/thank-you", request.url), 303);
+  delete payload.company_website;
+
   const webhook = (site as Record<string, unknown>).leadWebhook as string | null | undefined;
   if (!webhook || String(webhook).includes("TODO")) {
     return NextResponse.json(
@@ -21,7 +25,7 @@ export async function POST(request: Request) {
   const res = await fetch(webhook, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ ...payload, source: "website", page: request.headers.get("referer") ?? "" }),
+    body: JSON.stringify({ ...payload, source: "shoplocalprovo.com", page: request.headers.get("referer") ?? "" }),
   });
 
   if (!res.ok) {

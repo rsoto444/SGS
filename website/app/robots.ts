@@ -1,14 +1,15 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site.config";
 
-export const dynamic = "force-static"; // required for static export (SSG)
+export const dynamic = "force-static";
 
-// Search engines AND AI crawlers allowed - AI answers are a traffic source, not a threat.
+// Search engines AND AI crawlers allowed. Only utility routes and template demos are blocked.
 export default function robots(): MetadataRoute.Robots {
+  const block = ["/api/", "/thank-you", "/search", "/bold", "/calm"];
   return {
     rules: [
-      { userAgent: "*", allow: "/" },
-      { userAgent: ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended"], allow: "/" },
+      { userAgent: "*", allow: "/", disallow: block },
+      { userAgent: ["GPTBot", "OAI-SearchBot", "ClaudeBot", "PerplexityBot", "Google-Extended"], allow: "/", disallow: block },
     ],
     sitemap: `${site.url}/sitemap.xml`,
   };

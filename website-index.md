@@ -1,7 +1,13 @@
-# Website Index
+# Website index
 
-> The registry of every page this repo has drafted. One block per page, no tables, ever. **A draft is not published** - it goes live through `/publish` and your go-ahead. `/service-page` and `/blog-post` add blocks here; they never publish. One-line notes only, build stories stay in chat.
+What it is: every page on shoplocalprovo.com and where it stands.
+Made: Thursday 1 October 2026.
+Next action: add your GoHighLevel webhook and Google Places key, then run /publish.
 
-Status: **Draft** (written, renders in preview) → **Published** (live, in the sitemap, submitted)
+## Built, not live yet
+- Home, All categories, 160 category pages, business pages (one per listing)
+- Search, Add your business, Get matched, Advertise, About, Contact
+- Thank you (not indexed), Privacy policy and Terms (draft, need a lawyer's review)
 
-Nothing here yet. The finished shape is in [references/examples/website-index-example.md](references/examples/website-index-example.md).
+## Waiting
+- Blog: empty and noindexed until the first post

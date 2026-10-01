@@ -9,6 +9,7 @@ import type { CSSProperties } from "react";
 export const metadata = {
   title: "Blog",
   description: "Every post, newest first. Entries land here as /blog-post publishes them.",
+  robots: { index: false, follow: true }, // empty until the first post ships
 };
 
 const wrap: CSSProperties = { maxWidth: "var(--container-max, 1160px)", margin: "0 auto", padding: "0 var(--gutter, 24px)" };
