@@ -11,6 +11,11 @@ const nextConfig = {
   // Confirm it on the build output: every marketing route stays ○ (Static).
   images: { unoptimized: true }, // no image CDN bill; compress to WebP at build instead
 
+  // layout.tsx reads these two files from disk. Static pages read them at build time, but
+  // pages rendered on demand (/contact, /search) run in a Vercel function that only gets
+  // files Next traced as imports. Without this they return a 500 on Vercel.
+  outputFileTracingIncludes: { "/**": ["./app/ds.css", "./app/fonts.css"] },
+
   // A stray package-lock.json in the home directory makes Next guess the wrong
   // workspace root, which breaks file tracing. Pin it to this folder.
   // fileURLToPath, NOT .pathname - .pathname leaves a folder with a space in it
