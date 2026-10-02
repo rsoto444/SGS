@@ -12,9 +12,11 @@ export default function AddBusinessForm() {
   const [sugg, setSugg] = useState<Suggestion[]>([]);
   const [status, setStatus] = useState<"idle" | "loading" | "filled" | "off" | "error">("idle");
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const skipSearch = useRef(false); // set when a pick fills the box, so it does not search again
 
   useEffect(() => {
     if (timer.current) clearTimeout(timer.current);
+    if (skipSearch.current) { skipSearch.current = false; setSugg([]); return; }
     if (q.trim().length < 3 || status === "filled") { setSugg([]); return; }
     timer.current = setTimeout(async () => {
       try {
@@ -29,6 +31,7 @@ export default function AddBusinessForm() {
 
   async function pick(s: Suggestion) {
     setSugg([]);
+    skipSearch.current = true;
     setQ(s.name);
     setStatus("loading");
     try {

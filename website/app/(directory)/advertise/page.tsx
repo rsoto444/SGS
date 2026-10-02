@@ -8,8 +8,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/advertise" },
 };
 
-const price = (p: string | null) => p ?? "Contact us for pricing";
-
 export default function Advertise() {
   return (
     <div className="sl-wrap">
@@ -32,7 +30,8 @@ export default function Advertise() {
         </div>
         <div className="sl-panel sl-plan" style={{ border: "2px solid var(--line-brand)" }}>
           <span className="sl-badge dark">Premium listing</span>
-          <span className="price" style={{ fontSize: 20 }}>{price(site.plans.premiumPrice)}</span>
+          <span className="price">{site.plans.premiumMonthly}<small style={{ font: "var(--type-body-sm)" }}> / month</small></span>
+          <span className="sl-meta">or {site.plans.premiumYearly} a year (two months free)</span>
           <ul>
             <li>Everything in Free</li>
             <li>Featured badge and highlighted card</li>
@@ -44,10 +43,10 @@ export default function Advertise() {
         </div>
         <div className="sl-panel sl-plan">
           <span className="sl-badge">Advertising</span>
-          <span className="price" style={{ fontSize: 20 }}>{price(site.plans.adPrice)}</span>
+          <span className="price">From {site.plans.categorySponsor}<small style={{ font: "var(--type-body-sm)" }}> / month</small></span>
           <ul>
-            <li>Sponsored placement on category pages</li>
-            <li>Sponsored placement on the home page</li>
+            <li><strong>Category sponsor, {site.plans.categorySponsor} a month:</strong> one sponsor per category page</li>
+            <li><strong>Home page sponsor, {site.plans.homeSponsor} a month:</strong> the top ad slot on the home page</li>
             <li>Clearly labeled as an ad</li>
           </ul>
           <Link href="/contact?topic=ads" className="sl-btn sl-btn-ghost">Ask about ads</Link>

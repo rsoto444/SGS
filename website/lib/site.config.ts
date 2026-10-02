@@ -28,10 +28,11 @@ export const site = {
   // reachable for visitors but is noindexed and kept out of the sitemap.
   minListingsToIndex: 3,
 
-  // Premium and ad pricing. null = shows "Contact us for pricing". Fill in real
-  // numbers only when decided.
+  // Premium and ad pricing, set by the owner (October 2026). Change here, the Advertise page follows.
   plans: {
-    premiumPrice: null as string | null,
-    adPrice: null as string | null,
+    premiumMonthly: "$29",
+    premiumYearly: "$290",
+    categorySponsor: "$49",
+    homeSponsor: "$99",
   },
 };
