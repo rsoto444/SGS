@@ -8,6 +8,8 @@ export type Listing = {
   name: string;
   categories: string[]; // category slugs
   tier: "free" | "premium";
+  // Set to true ONLY after the owner has confirmed this person is in the Provo Community group.
+  communityMember?: boolean;
   description?: string;
   phone?: string;
   email?: string;

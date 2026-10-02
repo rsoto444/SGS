@@ -15,6 +15,14 @@ export const site = {
   // Operated by Provo SEO Pros.
   parent: { name: "Provo SEO Pros", url: "https://provoseopros.com" },
 
+  // The Provo Community Facebook group this directory works hand in hand with.
+  // Private group, so visitors request to join. Member count is the owner's own figure.
+  community: {
+    name: "Provo Community",
+    url: "https://www.facebook.com/groups/provocommunity",
+    members: "4,000+",
+  },
+
   // GHL inbound webhook. Every form on the site posts here via /api/lead.
   // Set LEAD_WEBHOOK_URL in Vercel (preferred) or paste it here.
   leadWebhook: (process.env.LEAD_WEBHOOK_URL ?? null) as string | null,

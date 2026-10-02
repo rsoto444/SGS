@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { groups } from "@/lib/categories";
+import { site } from "@/lib/site.config";
 
 type Suggestion = { placeId: string; name: string; detail: string };
 type Fields = { name: string; address: string; phone: string; website: string; hours: string; category: string; placeId: string };
@@ -111,6 +112,10 @@ export default function AddBusinessForm() {
           <option value="premium">Tell me about a premium listing</option>
           <option value="ads">Tell me about advertising</option>
         </select>
+      </label>
+      <label style={{ display: "flex", gap: 10, alignItems: "flex-start", fontWeight: 400 }}>
+        <input type="checkbox" name="community_member" value="yes" style={{ width: "auto", marginTop: 3 }} />
+        <span>I am a member of the <a href={site.community.url} target="_blank" rel="noopener">Provo Community Facebook group</a>. <span className="hint">We confirm membership before showing the Provo Community member badge on your listing.</span></span>
       </label>
       <label style={{ display: "flex", gap: 10, alignItems: "flex-start", fontWeight: 400 }}>
         <input type="checkbox" name="confirm" required style={{ width: "auto", marginTop: 3 }} />

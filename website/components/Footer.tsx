@@ -28,6 +28,7 @@ export default function Footer() {
         <div className="col">
           <span className="gw-label">Directory</span>
           <Link href="/get-matched">Get matched with a local pro</Link>
+          <Link href="/community">Provo Community group</Link>
           <Link href="/about">About</Link>
           <Link href="/privacy-policy">Privacy</Link>
           <Link href="/terms">Terms</Link>

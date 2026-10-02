@@ -6,7 +6,12 @@ export default function ListingCard({ l }: { l: Listing }) {
   const cats = categoryNames(l).slice(0, 2);
   return (
     <Link href={`/business/${l.slug}`} className={`sl-card${l.tier === "premium" ? " premium" : ""}`}>
-      {l.tier === "premium" && <span className="sl-badge dark">Featured</span>}
+      {(l.tier === "premium" || l.communityMember) && (
+        <span style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+          {l.tier === "premium" && <span className="sl-badge dark">Featured</span>}
+          {l.communityMember && <span className="sl-badge">Provo Community member</span>}
+        </span>
+      )}
       <h3>{l.name}</h3>
       {cats.length > 0 && <span className="sl-meta">{cats.map((c) => c.name).join(" · ")}</span>}
       {l.description && <p>{l.description.length > 140 ? l.description.slice(0, 137) + "..." : l.description}</p>}

@@ -53,7 +53,10 @@ export default async function BusinessPage({ params }: { params: Promise<{ slug:
         {l.name}
       </nav>
       <div className="sl-page-head">
-        {l.tier === "premium" && <span className="sl-badge dark">Featured</span>}
+        <span style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+          {l.tier === "premium" && <span className="sl-badge dark">Featured</span>}
+          {l.communityMember && <span className="sl-badge">Provo Community member</span>}
+        </span>
         <h1 style={{ marginTop: 8 }}>{l.name}</h1>
         <div className="sl-meta" style={{ marginTop: 10 }}>
           {cats.map((c) => <Link key={c.slug} href={`/category/${c.slug}`}>{c.name}</Link>)}

@@ -115,6 +115,20 @@ export default function Home() {
       </section>
 
       <section className="sl-section">
+        <div className="sl-wrap">
+          <div className="sl-panel" style={{ display: "grid", gap: 12, justifyItems: "start", background: "var(--surface-tint)" }}>
+            <span className="sl-eyebrow">Our community</span>
+            <h2 style={{ margin: 0 }}>Part of the {site.community.name} group</h2>
+            <p style={{ maxWidth: "62ch" }}>Shop Local Provo works hand in hand with the {site.community.name} Facebook group, a private community of {site.community.members} members. The group brings neighbors together, and the directory helps them find and support local businesses.</p>
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+              <Link href="/community" className="sl-btn sl-btn-primary">How it works</Link>
+              <a href={site.community.url} className="sl-btn sl-btn-ghost" target="_blank" rel="noopener">Request to join the group</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="sl-section">
         <div className="sl-wrap"><SponsoredSlot /></div>
       </section>
     </>

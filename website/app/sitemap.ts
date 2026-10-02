@@ -9,7 +9,7 @@ export const dynamic = "force-static";
 // and category pages too thin to index (fewer than site.minListingsToIndex listings).
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const core = ["", "/categories", "/add-business", "/get-matched", "/advertise", "/about", "/contact"];
+  const core = ["", "/categories", "/add-business", "/get-matched", "/advertise", "/community", "/about", "/contact"];
   return [
     ...core.map((p) => ({ url: `${site.url}${p}`, lastModified: now, priority: p === "" ? 1 : 0.8 })),
     ...categories.filter((c) => isIndexable(c.slug)).map((c) => ({ url: `${site.url}/category/${c.slug}`, lastModified: now, priority: 0.8 })),
