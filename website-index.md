@@ -1,13 +1,16 @@
 # Website index
 
 What it is: every page on shoplocalprovo.com and where it stands.
-Made: Thursday 1 October 2026.
-Next action: add your GoHighLevel webhook and Google Places key, then run /publish.
+Updated: Friday 2 October 2026.
+Next action: submit the sitemap in Google Search Console, then add your first listings.
 
-## Built, not live yet
-- Home, All categories, 160 category pages, business pages (one per listing)
-- Search, Add your business, Get matched, Advertise, About, Contact
-- Thank you (not indexed), Privacy policy and Terms (draft, need a lawyer's review)
+## Live on shoplocalprovo.com
+- Home, All categories, Add your business, Get matched, Advertise
+- About, Contact, Search (hidden from Google)
+- Privacy policy and Terms (drafts, need a lawyer's review)
+- Thank you (hidden from Google)
+- 160 category pages. They are visible to visitors but hidden from Google until a category has 3 listings.
+- A business page for every approved listing. None yet.
 
 ## Waiting
-- Blog: empty and noindexed until the first post
+- Blog: empty and hidden from Google until the first post
