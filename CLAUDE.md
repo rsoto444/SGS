@@ -153,6 +153,7 @@ This is the free version of the SEO Blueprint, frozen at the video. The living v
 - **Listings:** added by the owner on /add-business (Google Maps lookup pre-fills the form) or by Rich from a list. Approved listings go into `website/data/listings.json`. Google rule: only the Place ID may be stored long term, so the lookup pre-fills the owner's form and we store what the owner confirms.
 - **Leads:** every form posts to `/api/lead` then the GoHighLevel webhook. GHL workflow "Shop Local Provo - Website Submissions" is live and tested (contact + tags). Set in Vercel and tested on the live site.
 - **Google Maps lookup:** Google Cloud project "shop-local-provo", key restricted to Places API (New), $25/month budget alert. Set in Vercel and working on the live site.
+- **Listing invites (Friday 2 October 2026):** owner-confirmed only. GHL email template "Shop Local Provo - Free Listing Invite" built (not sent). Tag "directory-invite" applied to 43 Utah County business contacts (29 HVAC, 7 roofing, 4 electrical, 3 plumbing). Rich sends from GHL himself. Nothing from the CRM is put on the site.
 - **Contact shown on site:** (801) 372-2776 and contact@provoseopros.com. No street address shown, by choice.
 - **Open questions:** first listings to seed. Domain: bare shoplocalprovo.com is primary, www redirects to it.
 - **Thin category rule:** a category with fewer than 3 listings is noindexed and left out of the sitemap (`minListingsToIndex` in `lib/site.config.ts`).
