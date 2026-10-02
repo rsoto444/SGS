@@ -1,9 +1,11 @@
 import { NextResponse } from "next/server";
 import { site } from "@/lib/site.config";
+import { tooMany } from "@/lib/ratelimit";
 import { placesKey } from "@/lib/places";
 
 export async function GET(request: Request) {
   const key = placesKey();
+  if (tooMany(request)) return NextResponse.json({ ok: false, error: "slow-down" }, { status: 429 });
   if (!key) return NextResponse.json({ ok: false, error: "lookup-not-configured" }, { status: 503 });
 
   const q = new URL(request.url).searchParams.get("q")?.trim() ?? "";
