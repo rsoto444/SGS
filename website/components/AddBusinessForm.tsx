@@ -114,6 +114,10 @@ export default function AddBusinessForm() {
         </select>
       </label>
       <label style={{ display: "flex", gap: 10, alignItems: "flex-start", fontWeight: 400 }}>
+        <input type="checkbox" name="lead_opt_in" value="yes" style={{ width: "auto", marginTop: 3 }} />
+        <span>I would like to receive customer requests for my category. <span className="hint">Optional. We cannot promise any number of requests, and you can stop at any time.</span></span>
+      </label>
+      <label style={{ display: "flex", gap: 10, alignItems: "flex-start", fontWeight: 400 }}>
         <input type="checkbox" name="community_member" value="yes" style={{ width: "auto", marginTop: 3 }} />
         <span>I am a member of the <a href={site.community.url} target="_blank" rel="noopener">Provo Community Facebook group</a>. <span className="hint">We confirm membership before showing the Provo Community member badge on your listing.</span></span>
       </label>

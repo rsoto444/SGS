@@ -91,7 +91,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
         <aside className="sl-aside">
           <div className="sl-panel">
             <h2 style={{ fontSize: 22, marginBottom: 6 }}>Need {c.name.toLowerCase()}?</h2>
-            <p style={{ font: "var(--type-body-sm)", marginBottom: 16 }}>Tell us what you need and we will pass your request to local businesses.</p>
+            <p style={{ font: "var(--type-body-sm)", marginBottom: 16 }}>Tell us what you need and we will pass your request to a local business.</p>
             <LeadForm type="lead-referral" categorySlug={slug} button="Get matched" />
           </div>
         </aside>

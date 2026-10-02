@@ -39,7 +39,15 @@ export default function LeadForm({
           <textarea name="message" placeholder="What you need, where, and when." />
         </label>
       )}
-      <span className="hint">A phone number lets a local business reach you. We only use your details to pass on this request.</span>
+      <label style={{ display: "flex", gap: 10, alignItems: "flex-start", fontWeight: 400 }}>
+        <input type="checkbox" name="consent_share" value="yes" required style={{ width: "auto", marginTop: 3 }} />
+        <span>
+          {type === "business-inquiry" && listingName
+            ? <>I agree that Shop Local Provo may share my details with {listingName}, who may contact me by phone, text or email about this request.</>
+            : <>I agree that Shop Local Provo may share my details with a local business in this category, who may contact me by phone, text or email about this request.</>}
+        </span>
+      </label>
+      <span className="hint">Your details are shared only for this request. See our <a href="/privacy-policy">privacy policy</a>.</span>
       <button className="sl-btn sl-btn-primary sl-btn-lg" type="submit">{button}</button>
     </form>
   );

@@ -44,7 +44,7 @@ export default async function Search({ searchParams }: { searchParams: Promise<{
             ) : (
               <div className="sl-empty" style={{ marginTop: 16 }}>
                 <h3>No listings match &ldquo;{q}&rdquo; yet</h3>
-                <p style={{ marginBottom: 20 }}>Tell us what you are looking for and we will pass it to local businesses.</p>
+                <p style={{ marginBottom: 20 }}>Tell us what you are looking for and we will pass it to a local business.</p>
                 <Link href="/get-matched" className="sl-btn sl-btn-primary">Get matched</Link>
               </div>
             )}

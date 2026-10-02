@@ -104,7 +104,7 @@ export default function Home() {
           <h2>Three ways to use Shop Local Provo</h2>
           <ol className="sl-steps" style={{ padding: 0 }}>
             <li><strong>Browse or search</strong>Pick a category or type what you need. Every listing shows how to reach the business.</li>
-            <li><strong>Get matched</strong>Not sure who to call? Tell us what you need and we will pass your request to local businesses.</li>
+            <li><strong>Get matched</strong>Not sure who to call? Tell us what you need and we will pass your request to a local business.</li>
             <li><strong>List your business</strong>Free for every Provo business. Premium listings and ads are there when you want more visibility.</li>
           </ol>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 28 }}>
