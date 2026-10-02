@@ -31,15 +31,15 @@ export default function LeadForm({
       )}
       <label>Your name<input name="name" required autoComplete="name" /></label>
       <div className="sl-form-row">
-        <label>Phone<input name="phone" type="tel" autoComplete="tel" /></label>
-        <label>Email<input name="email" type="email" autoComplete="email" /></label>
+        <label>Phone<input name="phone" type="tel" autoComplete="tel" required /></label>
+        <label>Email (optional)<input name="email" type="email" autoComplete="email" /></label>
       </div>
       {message && (
         <label>Tell us a little about the job
           <textarea name="message" placeholder="What you need, where, and when." />
         </label>
       )}
-      <span className="hint">Add a phone or an email so we can reach you. We only use your details to pass on this request.</span>
+      <span className="hint">A phone number lets a local business reach you. We only use your details to pass on this request.</span>
       <button className="sl-btn sl-btn-primary sl-btn-lg" type="submit">{button}</button>
     </form>
   );
