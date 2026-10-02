@@ -19,10 +19,9 @@ export const site = {
   // Set LEAD_WEBHOOK_URL in Vercel (preferred) or paste it here.
   leadWebhook: (process.env.LEAD_WEBHOOK_URL ?? null) as string | null,
 
-  // Left blank on purpose: ask the owner, never invent. Footer and contact page
-  // only show what is filled in.
-  phone: "",
-  email: "",
+  // Shown in the footer and on /contact. Address is left blank on purpose (owner's call).
+  phone: "(801) 372-2776",
+  email: "contact@provoseopros.com",
   address: "",
 
   // A category page with fewer listings than this is thin content. It stays

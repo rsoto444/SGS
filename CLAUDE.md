@@ -153,5 +153,6 @@ This is the free version of the SEO Blueprint, frozen at the video. The living v
 - **Listings:** added by the owner on /add-business (Google Maps lookup pre-fills the form) or by Rich from a list. Approved listings go into `website/data/listings.json`. Google rule: only the Place ID may be stored long term, so the lookup pre-fills the owner's form and we store what the owner confirms.
 - **Leads:** every form posts to `/api/lead` then the GoHighLevel webhook. GHL workflow "Shop Local Provo - Website Submissions" is live and tested (contact + tags). Set `LEAD_WEBHOOK_URL` in Vercel at deploy.
 - **Google Maps lookup:** Google Cloud project "shop-local-provo", key restricted to Places API (New), $25/month budget alert. Works locally. Set `GOOGLE_PLACES_API_KEY` in Vercel at deploy.
-- **Open questions:** business phone/email/address for the footer, premium and ad prices, how premium gets paid for.
+- **Contact shown on site:** (801) 372-2776 and contact@provoseopros.com. No street address shown, by choice.
+- **Open questions:** premium and ad prices, how premium gets paid for, first listings to seed, www vs bare domain.
 - **Thin category rule:** a category with fewer than 3 listings is noindexed and left out of the sitemap (`minListingsToIndex` in `lib/site.config.ts`).
