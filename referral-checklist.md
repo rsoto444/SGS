@@ -14,7 +14,7 @@ Made Saturday 3 October 2026 · for every lead that says yes to sharing their de
 1. **Open the conversation, not just the task.** The task only says "Yes". The real request is in the messages above it.
 2. **Find the clear yes.** Look for their answer to "Is that okay? Reply YES or NO." Anything other than a clear yes means no referral.
 3. **Write down the trade, the city and the problem** in the contact: Referral Category, Referral City and Referral Details. The bot does not fill these in, so you do.
-4. **Pick ONE listed business** in that category. Choose a business that ticked the "send me leads" box when they listed. No such business? Set Referral Status to **No business available** and stop.
+4. **Pick ONE listed business** in that category. It must have a premium listing AND have ticked the "send me leads" box. No such business? Set Referral Status to **No business available** and stop.
 5. **Send the lead to that one business** by phone or email, with only the name, number and request the person agreed to share. Nothing else.
 6. **Set Referral Status to Referred.** Add a note with the date, the business you sent it to, and "yes found in conversation".
 7. **Tell the person, once.** A short text: "We passed your request on to a local business. They may contact you by phone, text or email." Do not promise a time.
@@ -37,4 +37,4 @@ Made Saturday 3 October 2026 · for every lead that says yes to sharing their de
 ## Open questions
 
 - **Pay per lead:** not decided, so no price is quoted to businesses yet.
-- **Which listed businesses opted in:** none yet, because no listings have come in.
+- **Which listed businesses qualify:** none yet, because no listings have come in and none are premium.
