@@ -26,6 +26,8 @@ export const site = {
   // GHL inbound webhook. Every form on the site posts here via /api/lead.
   // Set LEAD_WEBHOOK_URL in Vercel (preferred) or paste it here.
   leadWebhook: (process.env.LEAD_WEBHOOK_URL ?? null) as string | null,
+  // Newsletter signups go to their own GHL workflow. Falls back to leadWebhook until this is set.
+  newsletterWebhook: (process.env.LEAD_WEBHOOK_NEWSLETTER_URL ?? null) as string | null,
 
   // Shown in the footer and on /contact. Address is left blank on purpose (owner's call).
   // Shop Local Provo line. An AI assistant answers and takes messages.

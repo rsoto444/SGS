@@ -16,7 +16,12 @@ export async function POST(request: Request) {
   if (payload.company_website) return NextResponse.redirect(new URL(done, request.url), 303);
   delete payload.company_website;
 
-  const webhook = (site as Record<string, unknown>).leadWebhook as string | null | undefined;
+  const cfg = site as Record<string, unknown>;
+  const isNewsletter = payload.type === "newsletter";
+  // Newsletter signups use their own webhook when set; otherwise the main one, as before.
+  const webhook = ((isNewsletter && (cfg.newsletterWebhook as string | null)) || cfg.leadWebhook) as string | null | undefined;
+  // Never send empty values for a newsletter signup, so a blank field cannot wipe data on an existing contact.
+  if (isNewsletter) for (const k of Object.keys(payload)) if (payload[k] === "") delete payload[k];
   if (!webhook || String(webhook).includes("TODO")) {
     return NextResponse.json(
       { ok: false, error: "Lead webhook not connected. Run /service-page or set leadWebhook in lib/site.config.ts." },
