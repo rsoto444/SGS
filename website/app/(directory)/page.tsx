@@ -30,7 +30,7 @@ export default function Home() {
               "@type": "WebSite", name: site.name, url: site.url,
               potentialAction: { "@type": "SearchAction", target: `${site.url}/search?q={search_term_string}`, "query-input": "required name=search_term_string" },
             },
-            { "@type": "Organization", name: site.name, url: site.url, parentOrganization: { "@type": "Organization", name: site.parent.name, url: site.parent.url } },
+            { "@type": "Organization", name: site.name, url: site.url, telephone: site.phone, parentOrganization: { "@type": "Organization", name: site.parent.name, url: site.parent.url } },
           ],
         }}
       />

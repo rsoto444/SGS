@@ -10,7 +10,7 @@ export default function Footer() {
           <strong style={{ font: "var(--weight-black) 22px/1 var(--font-core)", color: "var(--white)", letterSpacing: "-0.03em" }}>Shop Local Provo</strong>
           <p style={{ font: "var(--type-body-sm)", maxWidth: "36ch" }}>{site.tagline}. Free listings for every local business.</p>
           {site.email && <a href={`mailto:${site.email}`}>{site.email}</a>}
-          {site.phone && <a href={`tel:${site.phone.replace(/[^+\d]/g, "")}`}>{site.phone}</a>}
+          {site.phone && <a href={`tel:${site.phoneTel}`}>{site.phone}</a>}
         </div>
         <div className="col">
           <span className="gw-label">Browse</span>

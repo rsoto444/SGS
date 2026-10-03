@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { site } from "@/lib/site.config";
 import LeadForm from "@/components/LeadForm";
 
 export const metadata: Metadata = {
@@ -16,6 +17,9 @@ export default function GetMatched() {
         <p>Not sure who to call? Describe what you need and we will pass your request to a local Provo business in that category.</p>
       </div>
       <div className="sl-panel"><LeadForm type="lead-referral" button="Get matched" /></div>
+      <p className="sl-note" style={{ marginTop: 20 }}>
+        Prefer to talk? Call <a href={`tel:${site.phoneTel}`}>{site.phone}</a>. {site.phoneNote} It will ask before sharing your details with a business.
+      </p>
     </div>
   );
 }

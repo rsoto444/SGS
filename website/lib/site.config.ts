@@ -28,7 +28,10 @@ export const site = {
   leadWebhook: (process.env.LEAD_WEBHOOK_URL ?? null) as string | null,
 
   // Shown in the footer and on /contact. Address is left blank on purpose (owner's call).
-  phone: "(801) 372-2776",
+  // Shop Local Provo line. An AI assistant answers and takes messages.
+  phone: "(385) 398-9367",
+  phoneTel: "+13853989367", // used in tel: links
+  phoneNote: "Answered by an AI assistant that takes your message.",
   email: "contact@provoseopros.com",
   address: "",
 

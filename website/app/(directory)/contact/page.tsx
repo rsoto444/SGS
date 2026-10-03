@@ -37,7 +37,15 @@ export default async function Contact({ searchParams }: { searchParams: Promise<
         </form>
       </div>
       {(site.email || site.phone) && (
-        <p style={{ marginTop: 20 }}>{site.email && <>Email: <a href={`mailto:${site.email}`}>{site.email}</a> </>}{site.phone && <>Phone: <a href={`tel:${site.phone.replace(/[^+\d]/g, "")}`}>{site.phone}</a></>}</p>
+        <div className="sl-panel" style={{ marginTop: 20, display: "grid", gap: 8 }}>
+          <h2 style={{ fontSize: 20 }}>Prefer to call or email?</h2>
+          {site.phone && (
+            <p>
+              Call <a href={`tel:${site.phoneTel}`}>{site.phone}</a>. {site.phoneNote} Calls may be recorded.
+            </p>
+          )}
+          {site.email && <p>Email <a href={`mailto:${site.email}`}>{site.email}</a>.</p>}
+        </div>
       )}
     </div>
   );
