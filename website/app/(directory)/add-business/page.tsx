@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AddBusinessForm from "@/components/AddBusinessForm";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export const metadata: Metadata = {
   title: "Add Your Business - Free Listing",
@@ -17,6 +18,12 @@ export default function AddBusiness() {
         <p>Search for your business on Google Maps, check the details we pull in, and send it. We review every listing before it goes live.</p>
       </div>
       <div className="sl-panel"><AddBusinessForm /></div>
+
+      <section style={{ marginTop: 48, display: "grid", gap: 16 }}>
+        <h2>Not ready to list yet?</h2>
+        <p>Get one email a month for local business owners: what is new on Shop Local Provo and simple ways to get found.</p>
+        <div className="sl-panel"><NewsletterSignup /></div>
+      </section>
 
       <section style={{ marginTop: 48, display: "grid", gap: 16 }}>
         <h2>What happens after you submit</h2>

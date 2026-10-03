@@ -103,3 +103,11 @@ a.sl-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);color:inh
   .sl-search{flex-direction:column;border-radius:var(--radius-card)}
   .sl-search input{padding:12px}
 }
+
+/* Newsletter signup (home band, add-business, footer) */
+.sl-news .sl-news-consent{display:flex;gap:10px;align-items:flex-start;font-weight:400}
+.sl-news .sl-news-consent input{width:auto;margin-top:3px}
+.sl-news-footer{max-width:560px}
+.sl-news-footer label,.sl-news-footer .hint{color:var(--ink-200)}
+.sl-news-footer .hint a{color:var(--white);text-decoration:underline}
+.sl-footer .sl-news-wrap{display:grid;gap:12px;padding-block:var(--space-6);border-top:1px solid rgba(255,255,255,.14);grid-template-columns:1fr}

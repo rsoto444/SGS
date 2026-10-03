@@ -8,6 +8,7 @@ import ListingCard from "@/components/ListingCard";
 import Icon from "@/components/Icon";
 import JsonLd from "@/components/JsonLd";
 import SponsoredSlot from "@/components/SponsoredSlot";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export const metadata: Metadata = {
   title: { absolute: "Shop Local Provo | Local Business Directory for Provo, Utah" },
@@ -124,6 +125,17 @@ export default function Home() {
               <Link href="/community" className="sl-btn sl-btn-primary">How it works</Link>
               <a href={site.community.url} className="sl-btn sl-btn-ghost" target="_blank" rel="noopener">Request to join the group</a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="sl-section">
+        <div className="sl-wrap" style={{ maxWidth: 760 }}>
+          <div className="sl-panel" style={{ display: "grid", gap: 12 }}>
+            <span className="sl-eyebrow">For business owners</span>
+            <h2 style={{ margin: 0 }}>Get the monthly newsletter</h2>
+            <p>One email a month for local business owners: what is new on Shop Local Provo and simple ways to get found.</p>
+            <NewsletterSignup />
           </div>
         </div>
       </section>

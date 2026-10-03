@@ -11,7 +11,9 @@ export async function POST(request: Request) {
   const payload = Object.fromEntries(form.entries());
 
   // Honeypot: real people never fill this hidden field. Pretend success to bots.
-  if (payload.company_website) return NextResponse.redirect(new URL("/thank-you", request.url), 303);
+  // Newsletter signups land on their own thank-you page so conversions stay separate.
+  const done = payload.type === "newsletter" ? "/thank-you/newsletter" : "/thank-you";
+  if (payload.company_website) return NextResponse.redirect(new URL(done, request.url), 303);
   delete payload.company_website;
 
   const webhook = (site as Record<string, unknown>).leadWebhook as string | null | undefined;
@@ -31,5 +33,5 @@ export async function POST(request: Request) {
   if (!res.ok) {
     return NextResponse.json({ ok: false, error: `Webhook responded ${res.status}` }, { status: 502 });
   }
-  return NextResponse.redirect(new URL("/thank-you", request.url), 303);
+  return NextResponse.redirect(new URL(done, request.url), 303);
 }

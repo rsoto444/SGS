@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { site } from "@/lib/site.config";
 import { groups } from "@/lib/categories";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Footer() {
   return (
@@ -33,6 +34,10 @@ export default function Footer() {
           <Link href="/privacy-policy">Privacy</Link>
           <Link href="/terms">Terms</Link>
         </div>
+      </div>
+      <div className="sl-wrap sl-news-wrap">
+        <span className="gw-label">Newsletter for local business owners</span>
+        <NewsletterSignup variant="footer" />
       </div>
       <div className="sl-wrap legal" style={{ display: "flex" }}>
         <span>&copy; {new Date().getFullYear()} Shop Local Provo</span>
