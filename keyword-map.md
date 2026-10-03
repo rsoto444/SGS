@@ -1,11 +1,28 @@
 # Your keyword map
 
 Every category page worth pushing first, in order. Real Provo search numbers pulled Saturday 3 October 2026 (Google Ads data through DataForSEO).
-**Next:** get at least 3 listings into the top categories below, starting with Restaurants, Bakeries and Dentists. A category stays hidden from Google until it has 3.
+**Next:** get at least 3 listings into Plumbers, Auto Repair, Bakeries and Storage Units first (the best places to start after checking Google, see below). A category stays hidden from Google until it has 3.
 
 50 category pages to build up, in order. Counts are searches a month in the Provo area, rounded the way Google rounds them, so small numbers are rough.
 
 **Read this first:** most categories here have small Provo volumes. The biggest are food and health (restaurants, bakeries, dentists). Home services like HVAC and roofing search far less, even though you have owners invited. Difficulty is a national score out of 100 and is a rough guide for local pages, not a promise.
+
+# What Google shows for the top searches
+
+Checked Saturday 3 October 2026, from a Provo location, for the ten biggest searches. This is my reading, not a promise of rankings.
+
+**Hard to beat for a new site**
+- **Restaurants, hotels, pizza:** TripAdvisor, OpenTable, Expedia and big chains fill the page.
+- **Hair salons:** booking sites (Vagaro, Fresha) and Yelp.
+- **Dentists, urgent care:** Intermountain, health sites and the dentists' own pages.
+
+**Most realistic to start with**
+- **Plumbers:** the results include Craigslist, Facebook and MapQuest next to a few plumbers' own sites.
+- **Auto repair:** mostly small local shops and a few directories.
+- **Bakeries:** a local directory (provo.com) ranks, so a local directory can.
+- **Storage units:** small directories (three best rated, rentcafe) rank.
+
+Every search also shows a map pack with 3 or 4 businesses on top. Category pages compete below that.
 
 ---
 
