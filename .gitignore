@@ -15,3 +15,6 @@ gsc-key.json
 # Python build artifacts
 __pycache__/
 *.pyc
+
+# Enriched contact lists contain personal data - keep local
+*-enriched.csv
